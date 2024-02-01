@@ -1,0 +1,111 @@
+body{
+    background-color: #282828;
+    color: #fff;
+}
+
+.cabecalho{
+    height: 80px;
+    background-color: #0b0b0b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    border-bottom: 1px solid
+    #282828;
+}
+
+.cabecalho .logo{
+    display: flex;
+    width: 20px;
+    height: 70px;
+}
+
+.cabecalho .menu{
+    display: flex;
+    gap: 10px;
+}
+
+.cabecalho .menu li a{
+    padding: 20px 20px 30px 20px;
+    color: #e8e8e8;
+    font: bolder;
+    font-size: 20;
+    font-family: 'iCiel Gotham 400', sans-serif;
+}
+
+.cabecalho .menu li a:hover{
+    color: #fa0;
+    border-bottom: 3px solid
+    #fa0;
+}
+
+.home{
+    display: flex;
+    position: relative;
+    min-height: calc(100vh - 80px);
+}
+
+.home::after{
+    background-color: aqua;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg,
+    rgba(0, 0, 0, .85), rgba(0, 0, 0, .7) 50%,
+    transparent 90%);
+}
+
+.home .background{
+    width: 100%;
+    object-fit: cover;
+}
+
+.home .infos{
+    position: absolute;
+    z-index: 1;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 80px 80px 80px 100px;
+    max-width: 700;
+}
+
+.home .infos img{
+    max-width: 350px;
+}
+
+.home .infos .titulo{
+    font-family: 'ChaletComprime';
+    font-size: 55px;
+}
+.home .infos .texto{
+    font-family: 'Chalet';
+    font-size: 25px;
+    line-height: 1.6;
+}
+
+.home .btn-comecar{
+    background-color: rgba(255, 255, 255, .1);
+    border: 0.5px solid #fff;
+    border-radius: 4px;
+    font-family: 'ChaletComprime';
+    font-size: 28px;
+    text-align: center;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    width: 50%;
+    transition: all .3s ease-in;
+}
+
+.home .btn-comecar:hover{
+    background-color: #fa0;
+    color: #000;
+    border-color: #000;
+}
+
+.finalpage{
+    background: rgb(36, 36, 36);
+}
